@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #login-body{
+            border: solid red 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-body">
+        <h2>Login</h2>
+        <label for="Email"><input type="email" name="email" id="">Email</label>
+        <label for="Password"><input type="password" name="password" id="">Password</label>
+        <button id="submitLogin" type="submit">submit</button>
+    </div>
+    <script>
+        submitLogin.addEventListener("click",()=>{
+            console.log(email.isValid());
+        })
+    </script>
+</body>
+</html>
